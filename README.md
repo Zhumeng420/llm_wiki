@@ -3,7 +3,7 @@
 > A **self-building personal knowledge base** powered by LLMs.  
 > Drop in any document, web page or remote source — get a fully cross-linked Wiki, a knowledge graph, hybrid search and **proactive knowledge-gap detection** out of the box.
 
-[简体中文](./README.zh-CN.md) | **English**
+[简体中文](demo/README.zh-CN.md) | **English**
 
 ---
 
