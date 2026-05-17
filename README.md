@@ -3,7 +3,7 @@
 > A **self-building personal knowledge base** powered by LLMs.  
 > Drop in any document, web page or remote source — get a fully cross-linked Wiki, a knowledge graph, hybrid search and **proactive knowledge-gap detection** out of the box.
 
-[简体中文](demo/README.zh-CN.md) | **English**
+[简体中文](./README.zh-CN.md) | **English**
 
 ---
 
@@ -128,6 +128,50 @@ Open **http://localhost:5173** — Vite proxies `/api/*` to the backend automati
 
 ---
 
+## 📷 Screenshots
+
+<!-- ============== UI WALKTHROUGH ============== -->
+
+### 1️⃣ Dashboard
+<p align="center"><img src="docs/images/01-dashboard.png" alt="Dashboard" width="880"/></p>
+<sub>Counters, recent ingest events and LLM connectivity at a glance.</sub>
+
+### 2️⃣ Data Sources
+<p align="center"><img src="docs/images/02-sources.png" alt="Data sources" width="880"/></p>
+<sub>Upload files, submit URL / Feishu / DingTalk; live task queue with retry & cancel.</sub>
+
+### 3️⃣ Wiki
+<p align="center"><img src="docs/images/03-wiki.png" alt="Wiki page" width="880"/></p>
+<sub>Browse generated Markdown pages and follow [[wikilinks]].</sub>
+
+### 4️⃣ Knowledge Graph
+<p align="center"><img src="docs/images/04-graph.png" alt="Knowledge graph" width="880"/></p>
+<sub>Force-directed graph (G6 v5) with Louvain communities, isolated / bridge nodes and a one-click <b>Rebuild</b>.</sub>
+
+### 5️⃣ Smart Search
+<p align="center"><img src="docs/images/05-search.png" alt="Hybrid search" width="880"/></p>
+<sub>BM25 + KNN hybrid search, fused with graph adjacency boost.</sub>
+
+### 6️⃣ Knowledge Gaps
+<p align="center"><img src="docs/images/06-insights.png" alt="Insights & proactive gap" width="880"/></p>
+<sub>Structural & semantic gap audit + <b>proactive gap reasoning</b> (see next section).</sub>
+
+### 7️⃣ Schedule
+<p align="center"><img src="docs/images/07-schedule.png" alt="Scheduled jobs" width="880"/></p>
+<sub>Cron-based watcher that re-ingests changed sources automatically.</sub>
+
+### 8️⃣ Evaluation
+<p align="center"><img src="docs/images/08-eval.png" alt="Evaluation" width="880"/></p>
+<sub>CSV-driven evaluation: answerRate / hitRate@5 / avgRelevance / avgLatency, optional LLM-as-judge.</sub>
+
+### 9️⃣ Settings
+<p align="center"><img src="docs/images/09-settings.png" alt="Settings" width="880"/></p>
+<sub>Edit & ping LLM endpoints; switch chat / embedding / vision models on the fly.</sub>
+
+<!-- ============================================ -->
+
+---
+
 ## 🤖 Proactive Gap Analysis
 
 Most "knowledge gap" tools only react to user questions. LLM-Wiki goes further:
@@ -140,6 +184,13 @@ Most "knowledge gap" tools only react to user questions. LLM-Wiki goes further:
 ```bash
 curl "http://localhost:8080/api/insights/proactive-gap?count=15&topK=5"
 ```
+
+<!-- ============== PROACTIVE GAP DEMO ============== -->
+<p align="center">
+  <img src="docs/images/06-insights-proactive.png" alt="Proactive gap analysis result" width="880"/>
+</p>
+<sub align="center">Each row: a system-guessed question, retrieval evidence, verdict (answerable / partial / no) and the missing knowledge points.</sub>
+<!-- ================================================= -->
 
 ---
 

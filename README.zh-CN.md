@@ -127,6 +127,50 @@ npm run dev
 
 ---
 
+## 📷 界面预览
+
+<!-- ============== UI 全走读 ============== -->
+
+### 1️⃣ 总览（Dashboard）
+<p align="center"><img src="docs/images/01-dashboard.png" alt="总览" width="880"/></p>
+<sub>计数、最近导入事件、LLM 连接状态一眼可见。</sub>
+
+### 2️⃣ 数据源（Sources）
+<p align="center"><img src="docs/images/02-sources.png" alt="数据源" width="880"/></p>
+<sub>上传文件、提交 URL / 飞书 / 钉钉；任务队列实时状态，可重试/取消。</sub>
+
+### 3️⃣ Wiki 页面
+<p align="center"><img src="docs/images/03-wiki.png" alt="Wiki 页面" width="880"/></p>
+<sub>浏览生成的 Markdown 页面，支持 [[wikilink]] 跳转。</sub>
+
+### 4️⃣ 知识图谱（Graph）
+<p align="center"><img src="docs/images/04-graph.png" alt="知识图谱" width="880"/></p>
+<sub>G6 v5 力导向图、Louvain 社区染色、桥节点/孤立节点分析、一键 <b>重建图谱</b>。</sub>
+
+### 5️⃣ 智能检索（Search）
+<p align="center"><img src="docs/images/05-search.png" alt="混合检索" width="880"/></p>
+<sub>BM25 + KNN 混合检索，叠加图谱邻接加权。</sub>
+
+### 6️⃣ 空白反推（Insights）
+<p align="center"><img src="docs/images/06-insights.png" alt="空白反推" width="880"/></p>
+<sub>结构 + 语义空白审计，以及 <b>主动空白反推</b>（详见下一节）。</sub>
+
+### 7️⃣ 定时更新（Schedule）
+<p align="center"><img src="docs/images/07-schedule.png" alt="定时任务" width="880"/></p>
+<sub>基于 Quartz Cron 的看守者，自动重新抓取变更过的源。</sub>
+
+### 8️⃣ 评测体系（Eval）
+<p align="center"><img src="docs/images/08-eval.png" alt="评测体系" width="880"/></p>
+<sub>CSV 驱动的评测：answerRate / hitRate@5 / avgRelevance / avgLatency，可选 LLM-as-judge。</sub>
+
+### 9️⃣ 系统设置（Settings）
+<p align="center"><img src="docs/images/09-settings.png" alt="系统设置" width="880"/></p>
+<sub>编辑并测通 LLM 端点；在线切换 chat / embedding / vision 模型。</sub>
+
+<!-- ========================================== -->
+
+---
+
 ## 🤖 主动空白反推
 
 大多数"知识空白"工具只能被动响应用户提问。LLM-Wiki 更进一步：
@@ -139,6 +183,13 @@ npm run dev
 ```bash
 curl "http://localhost:8080/api/insights/proactive-gap?count=15&topK=5"
 ```
+
+<!-- ============== 主动反推效果图 ============== -->
+<p align="center">
+  <img src="docs/images/06-insights-proactive.png" alt="主动空白反推结果" width="880"/>
+</p>
+<sub align="center">每一行：系统猜测的问题 · 检索证据 · 判定结果（可回答 / 部分覆盖 / 无法回答）· 缺失要点。</sub>
+<!-- =================================================== -->
 
 ---
 
