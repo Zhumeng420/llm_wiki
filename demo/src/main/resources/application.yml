@@ -1,0 +1,85 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: llm-wiki
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 200MB
+  datasource:
+    url: jdbc:h2:file:./data/db/llmwiki;AUTO_SERVER=TRUE;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate.dialect: org.hibernate.dialect.H2Dialect
+  quartz:
+    job-store-type: memory
+    properties:
+      org.quartz.threadPool.threadCount: 2
+
+llm-wiki:
+  storage:
+    # raw 原始资料、wiki 生成的 Markdown、index Lucene 索引、graph 图谱 JSON
+    root-dir: ./data
+    raw-dir: ./data/raw
+    wiki-dir: ./data/wiki
+    index-dir: ./data/index
+    graph-dir: ./data/graph
+  llm:
+    chat:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      api-key: ""
+      model: qwen-plus
+      temperature: 0.2
+      max-tokens: 8192
+      json-mode: true
+      timeout-seconds: 180
+    embedding:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      api-key:  ""
+      model: text-embedding-v4
+      dimensions: 1024
+      timeout-seconds: 60
+    vision:
+      enabled: false
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      api-key: ""
+      model: qwen3.5-omni-plus-2026-03-15
+      timeout-seconds: 120
+  parser:
+    feishu:
+      enabled: false
+      app-id: ""
+      app-secret: ""
+    dingtalk:
+      enabled: false
+      app-key: ""
+      app-secret: ""
+    ocr:
+      enabled: false
+      data-path: ""
+      lang: chi_sim+eng
+  scheduler:
+    enabled: true
+    cron: "0 0 3 * * ?"
+  ingest:
+    max-retry: 3
+    worker-threads: 1
+
+logging:
+  level:
+    root: INFO
+    com.example.llmwiki: DEBUG
+    org.apache.pdfbox: WARN
+    org.apache.poi: WARN

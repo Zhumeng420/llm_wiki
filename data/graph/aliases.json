@@ -1,0 +1,130 @@
+{
+  "entries" : {
+    "z-ai" : {
+      "canonicalSlug" : "z-ai",
+      "canonicalTitle" : "Z.ai",
+      "keys" : [ "zai" ],
+      "titles" : [ "Z.ai" ]
+    },
+    "chat-coding-ai-agent" : {
+      "canonicalSlug" : "chat-coding-ai-agent",
+      "canonicalTitle" : "Chat Coding AI Agent",
+      "keys" : [ "chatcodingaiagent" ],
+      "titles" : [ "Chat Coding AI Agent" ]
+    },
+    "sandbox-isolation" : {
+      "canonicalSlug" : "sandbox-isolation",
+      "canonicalTitle" : "沙箱隔离",
+      "keys" : [ "沙箱隔离" ],
+      "titles" : [ "沙箱隔离" ]
+    },
+    "chat-coding-agent" : {
+      "canonicalSlug" : "chat-coding-agent",
+      "canonicalTitle" : "Chat Coding Agent",
+      "keys" : [ "chatcodingagent" ],
+      "titles" : [ "Chat Coding Agent" ]
+    },
+    "sandbox" : {
+      "canonicalSlug" : "sandbox",
+      "canonicalTitle" : "Sandbox沙箱",
+      "keys" : [ "sandbox沙箱环境", "sandbox沙箱" ],
+      "titles" : [ "Sandbox沙箱", "Sandbox沙箱环境" ]
+    },
+    "生产级部署" : {
+      "canonicalSlug" : "生产级部署",
+      "canonicalTitle" : "生产级部署",
+      "keys" : [ "生产级" ],
+      "titles" : [ "生产级部署" ]
+    },
+    "serverless" : {
+      "canonicalSlug" : "serverless",
+      "canonicalTitle" : "Serverless",
+      "keys" : [ "serverless" ],
+      "titles" : [ "Serverless架构", "Serverless" ]
+    },
+    "chat-coding" : {
+      "canonicalSlug" : "chat-coding",
+      "canonicalTitle" : "Chat Coding",
+      "keys" : [ "chatcoding" ],
+      "titles" : [ "Chat Coding" ]
+    },
+    "ai-agent" : {
+      "canonicalSlug" : "ai-agent",
+      "canonicalTitle" : "AI Agent",
+      "keys" : [ "aiagent", "企业级aiagent" ],
+      "titles" : [ "AI Agent部署", "企业级AI Agent架构", "AI Agent 架构概述", "AI Agent" ]
+    },
+    "ai-agent-enterprise-deployment" : {
+      "canonicalSlug" : "ai-agent-enterprise-deployment",
+      "canonicalTitle" : "AI Agent企业落地",
+      "keys" : [ "aiagent企业落地" ],
+      "titles" : [ "AI Agent企业落地" ]
+    },
+    "aliyun-function-compute-agentrun" : {
+      "canonicalSlug" : "aliyun-function-compute-agentrun",
+      "canonicalTitle" : "阿里云函数计算AgentRun",
+      "keys" : [ "阿里云函数计算agentrun" ],
+      "titles" : [ "阿里云函数计算AgentRun" ]
+    },
+    "可观测性" : {
+      "canonicalSlug" : "可观测性",
+      "canonicalTitle" : "可观测性",
+      "keys" : [ "可观测性" ],
+      "titles" : [ "可观测性" ]
+    },
+    "bailian" : {
+      "canonicalSlug" : "bailian",
+      "canonicalTitle" : "百炼",
+      "keys" : [ "百炼" ],
+      "titles" : [ "百炼" ]
+    },
+    "agentrun" : {
+      "canonicalSlug" : "agentrun",
+      "canonicalTitle" : "AgentRun",
+      "keys" : [ "agentrun" ],
+      "titles" : [ "AgentRun" ]
+    },
+    "aliyun-function-compute" : {
+      "canonicalSlug" : "aliyun-function-compute",
+      "canonicalTitle" : "阿里云函数计算",
+      "keys" : [ "阿里云函数计算fc", "阿里云函数计算" ],
+      "titles" : [ "阿里云函数计算FC", "阿里云函数计算" ]
+    },
+    "吉利汽车" : {
+      "canonicalSlug" : "吉利汽车",
+      "canonicalTitle" : "吉利汽车",
+      "keys" : [ "吉利汽车" ],
+      "titles" : [ "吉利汽车" ]
+    },
+    "enterprise-ai-deployment" : {
+      "canonicalSlug" : "enterprise-ai-deployment",
+      "canonicalTitle" : "企业级AI落地",
+      "keys" : [ "企业级ai落地" ],
+      "titles" : [ "企业级AI落地" ]
+    },
+    "aliyun" : {
+      "canonicalSlug" : "aliyun",
+      "canonicalTitle" : "阿里云",
+      "keys" : [ "阿里云" ],
+      "titles" : [ "阿里云" ]
+    },
+    "agentic-ai" : {
+      "canonicalSlug" : "agentic-ai",
+      "canonicalTitle" : "Agentic AI",
+      "keys" : [ "agenticai" ],
+      "titles" : [ "Agentic AI" ]
+    },
+    "modelscope-community" : {
+      "canonicalSlug" : "modelscope-community",
+      "canonicalTitle" : "魔搭社区",
+      "keys" : [ "魔搭社区" ],
+      "titles" : [ "魔搭社区" ]
+    },
+    "function-compute-fc" : {
+      "canonicalSlug" : "function-compute-fc",
+      "canonicalTitle" : "函数计算FC",
+      "keys" : [ "函数计算fc" ],
+      "titles" : [ "函数计算 FC", "函数计算FC" ]
+    }
+  }
+}
