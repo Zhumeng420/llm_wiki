@@ -153,7 +153,7 @@ Open **http://localhost:5173** — Vite proxies `/api/*` to the backend automati
 <sub>BM25 + KNN hybrid search, fused with graph adjacency boost.</sub>
 
 ### 6️⃣ Knowledge Gaps
-<p align="center"><img src="docs/images/06-insights.png" alt="Insights & proactive gap" width="880"/></p>
+<p align="center"><img src="docs/images/06-insights-proactive.png" alt="Insights & proactive gap" width="880"/></p>
 <sub>Structural & semantic gap audit + <b>proactive gap reasoning</b> (see next section).</sub>
 
 ### 7️⃣ Schedule

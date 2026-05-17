@@ -152,7 +152,7 @@ npm run dev
 <sub>BM25 + KNN 混合检索，叠加图谱邻接加权。</sub>
 
 ### 6️⃣ 空白反推（Insights）
-<p align="center"><img src="docs/images/06-insights.png" alt="空白反推" width="880"/></p>
+<p align="center"><img src="docs/images/06-insights-proactive.png" alt="空白反推" width="880"/></p>
 <sub>结构 + 语义空白审计，以及 <b>主动空白反推</b>（详见下一节）。</sub>
 
 ### 7️⃣ 定时更新（Schedule）
